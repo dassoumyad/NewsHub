@@ -1,0 +1,57 @@
+/* NewsHub's red and deep red brand palette */
+:root{--green:#a5263d;--green-dark:#6f1022;--gold:#ad3448;--brand-red:#a5263d;--brand-deep:#6f1022;--brand-soft:#f5e6e8;--brand-ink:#42131e}
+.topline{background:var(--brand-deep)}
+.wordmark{color:var(--brand-ink)}
+.main-nav>a:hover,.text-link,.article-membership>a,.view-site-link,.admin-site-link,.admin-quiet{color:var(--brand-red)}
+.main-nav .nav-premium,.members-link,.section-heading h2 span,.saved-page h1 span{color:var(--brand-red)}
+.subscribe-button,.banner-button,.auth-submit,.premium-button,.admin-primary{background:var(--brand-red)}
+.subscribe-button:hover,.banner-button:hover,.auth-submit:hover,.premium-button:hover,.admin-primary:hover{background:var(--brand-deep)}
+.story-meta>span,.hero-story .story-meta>span{color:#8b1d32}
+.category-tabs button.active{color:var(--brand-deep)}
+.category-tabs button.active:after{background:var(--brand-red)}
+.live-dot{background:#c43c50;box-shadow:0 0 0 3px #f3dfe2}
+.hero-image-label .live-dot{background:#f0b3b7;box-shadow:0 0 0 3px #ffffff37}
+.story-title-link:hover h2,.save-button:hover,.save-button.is-saved,.profile-menu svg,.profile-menu>a:hover,.profile-menu>button:hover{color:var(--brand-red)}
+.save-button:hover{background:#f8eaec}
+.membership-icon{background:#f2e1e4;color:var(--brand-red)}
+.profile-avatar,.author-avatar{background:#f2e1e4;color:var(--brand-deep)}
+.auth-aside{background:var(--brand-deep)}
+.auth-quote h1 em{color:#efb7bf}
+.auth-form-side .auth-back:hover,.admin-login-card .auth-back:hover{color:var(--brand-red)}
+.auth-switch button,.premium-message button{color:var(--brand-red)}
+.input-wrap:focus-within{border-color:#bd6474}
+.article-body .article-lede:first-letter,.article-membership>svg{color:var(--brand-red)}
+.article-end{color:#9b5862}
+.premium-back:hover{color:var(--brand-red)}
+.premium-icon{background:#f5e6e8;color:var(--brand-red)}
+.premium-label,.premium-card-intro h1 em{color:var(--brand-red)}
+.premium-save-badge{background:#f5e6e8;color:var(--brand-deep)}
+.premium-benefits li svg,.premium-trust svg{color:var(--brand-red)}
+.admin-sidebar nav button:hover{background:#faf1f2}
+.admin-sidebar nav button.selected{background:#f7e9eb;color:var(--brand-deep)}
+.admin-sidebar nav button.selected svg,.admin-sidebar nav button svg{color:#a5263d}
+.admin-avatar,.admin-shield{background:#f5e6e8;color:var(--brand-deep)}
+.admin-stat-card .stat-green{color:#a5263d;background:#f7e9eb}
+.admin-quiet:hover,.view-site-link:hover,.admin-site-link:hover{color:var(--brand-deep)}
+.editor-input:focus{border-color:#bd6474}
+.premium-checkbox,.cover-upload{color:#8f2638}
+.category-admin-icon{background:#f5e6e8;color:var(--brand-red)}
+.status-dot{color:#5b795d}
+.status-dot:before{background:#719875}
+.remove-saved{color:#96958c}
+.premium-page:before{background:radial-gradient(ellipse at 20% 18%,#f0dce0 0,transparent 32%),radial-gradient(ellipse at 86% 78%,#ead7dc 0,transparent 34%)}
+.premium-orb{border-color:#a5263d20}
+.premium-offer{background:#faf2f3}
+.premium-message-success,.form-success,.alert-success{background:#edf4ed;color:#517554}
+.premium-message-error,.form-message:not(.form-success),.alert-error{background:#fbefed;color:#984c40}
+.success-toast{position:fixed;right:24px;top:94px;z-index:80;width:min(390px,calc(100vw - 32px));display:flex;align-items:center;gap:11px;padding:13px 14px;background:#eef8ef;border:1px solid #c9e4cd;border-radius:5px;box-shadow:0 12px 30px #1d482019;color:#315f39;font-size:11px;line-height:1.55;animation:toast-in .25s ease-out}
+.success-toast-icon{width:27px;height:27px;flex:none;border-radius:50%;display:grid;place-items:center;background:#d9f0dc;color:#2d783b}
+.success-toast>span:nth-child(2){flex:1}
+.success-toast .icon-button{width:27px;height:27px;flex:none;color:#62806a}
+.success-toast .icon-button:hover{background:#dff0e1}
+@keyframes toast-in{from{opacity:0;transform:translateY(-7px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:500px){.success-toast{top:77px;right:16px;font-size:10px}}
+.topline-inner>a{color:#f1c5cb}
+.explore-link svg,.ticker-inner>svg,.ticker-label,.premium-note svg,.premium-trust svg{color:var(--brand-red)}
+.eyebrow{color:#8f3040}
+.search-panel>svg,.empty-hero>svg,.saved-sparkle{color:var(--brand-red)}

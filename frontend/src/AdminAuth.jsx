@@ -1,0 +1,10 @@
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { ArrowLeft, ArrowRight, KeyRound, LockKeyhole, Mail, ShieldCheck } from "lucide-react";
+import api, { getErrorMessage } from "./api/axios";
+
+export default function AdminAuth() {
+  const [form, setForm] = useState({ email: "", password: "" }); const [error, setError] = useState(""); const [busy, setBusy] = useState(false); const navigate = useNavigate();
+  async function submit(e) { e.preventDefault(); setBusy(true); setError(""); try { const { data } = await api.post("/api/admin/login-admin", form); localStorage.setItem("adminToken", data.token); localStorage.setItem("adminUser", JSON.stringify({ email: form.email })); navigate("/admin"); } catch (e) { setError(getErrorMessage(e)); } finally { setBusy(false); } }
+  return <main className="admin-auth-page"><Link to="/" className="wordmark">news<span>hub</span><i>.</i></Link><section className="admin-login-card"><div className="admin-shield"><KeyRound size={21} /></div><span className="eyebrow">NEWSROOM ACCESS</span><h1>Welcome to the desk.</h1><p>Sign in to manage stories and keep the newsroom moving.</p><form onSubmit={submit}><label className="field-label">Admin email<div className="input-wrap"><Mail size={17} /><input type="email" name="email" value={form.email} onChange={e => setForm({...form,email:e.target.value})} placeholder="editor@newshub.com" required autoComplete="username" /></div></label><label className="field-label">Password<div className="input-wrap"><LockKeyhole size={17} /><input type="password" value={form.password} onChange={e => setForm({...form,password:e.target.value})} placeholder="Your password" required autoComplete="current-password" /></div></label>{error && <p className="form-message" role="alert">{error}</p>}<button className="auth-submit" disabled={busy}>{busy ? "Signing in…" : "Enter newsroom"}<ArrowRight size={16} /></button></form><div className="auth-privacy"><ShieldCheck size={14} /> Secure newsroom access</div></section><Link to="/" className="auth-back"><ArrowLeft size={15} /> Return to NewsHub</Link></main>;
+}

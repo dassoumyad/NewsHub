@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6f1022"/>
+      <stop offset="1" stop-color="#a5263d"/>
+    </linearGradient>
+    <pattern id="lines" width="32" height="32" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <path d="M0 0v32" stroke="#fff" stroke-opacity=".035" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1200v675H0z"/>
+  <path fill="url(#lines)" d="M0 0h1200v675H0z"/>
+  <circle cx="1050" cy="120" r="270" fill="#fff" fill-opacity=".035"/>
+  <circle cx="80" cy="650" r="260" fill="#25070e" fill-opacity=".12"/>
+  <text x="72" y="368" fill="#fff" font-family="Georgia,serif" font-size="120" letter-spacing="-8">newshub<tspan fill="#f0b7c0">.</tspan></text>
+  <path d="M78 408h140" stroke="#f0b7c0" stroke-width="4"/>
+  <text x="78" y="454" fill="#fff" fill-opacity=".76" font-family="Arial,sans-serif" font-size="20" letter-spacing="5">NEWS WITH PERSPECTIVE</text>
+</svg>

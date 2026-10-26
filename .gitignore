@@ -1,0 +1,20 @@
+# Dependencies and build output
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/coverage/
+
+# Local environment values; keep the examples
+**/.env
+**/.env.*
+!**/.env.example
+
+# Logs and editor state
+**/*.log
+.vscode/
+.idea/
+.DS_Store
+
+# Local scratch payment pages
+/backend/see.html
+/test-payment.html
